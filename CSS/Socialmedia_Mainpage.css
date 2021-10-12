@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{padding: 0;margin: 0;box-sizing: border-box ;}
+body{
+    background-color: white;
+}
+.header{
+    width: 100%;
+    position: sticky;
+    height: 54px;
+    top: 0;
+    background-color: rgb(48, 48, 48);
+    box-shadow: 0px 1px 5px rgb(100, 100, 100);
+    justify-content: space-evenly;
+    display: flex;
+}
+.header_left img{
+    height: 50px;
+    margin: 3px;
+    margin-right: 100px;
+    
+}
+.header_left{
+    display: flex;
+}
+.header_right{
+    display: flex;
+}
+.header_search{
+    margin: 10px 0px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    height: 34px;
+    background-color: white;
+}
+.header_search input{
+    outline: none;
+    border: none;
+    width: 220px;
+    background: none;
+}
+.header_options{
+    margin-top: 10px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+}
+.header_options:hover{
+    color: blue;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+.header_options h3{
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 5px;
+}
+.headerOption_icon{
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+.body_main{
+    display: flex;
+    margin-top: 35px;
+    width: 100%;
+    margin: 0 20px;
+}
+.sidebar{
+    position: sticky;
+    margin-left: 50px;
+    top: 80px;
+    width: 40vh;
+    border-radius: 10px;
+    text-align: center;
+    height: fit-content;
+}
+.sidebarbottom{
+    text-align: left;
+    
+    padding: 5px;
+    border: 1px solid lightgray;
+    background-color: #efeff1;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #808e9b;
+}
+.sidebar_recentitem{
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: gray;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+.sidebar_recentitem .detail{
+    font-size: 20px;
+}
+.sidebar_recentitem i{
+    padding-left: 70px;
+    font-size: 30px;
+    padding-right: 10px;
+}
+.sidebar_recentitem:hover{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+.sidebar_hash{
+    margin: 0 10px;
+}
+.sidebarbottom p{
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+}
+.feed{
+    width: 90vh;
+    margin: 0 20px;
+    margin-top: 25px;
+    margin-left: 40px;
+    
+}
+.feed_inputcontainer{
+    background-color: #efeff1;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px #808e9b;
+    
+}
+.account_and_write{
+    display: flex;  
+}
+.account_and_write img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.feed_inputcontainer .account{
+    font-size: 50px;
+}
+.feed_input{
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    color: gray;
+    padding-left: 15px;
+}
+.feed_input form{
+    display: flex;
+}
+.feed_input form input{
+    width: 70vh;
+    border: none;
+    margin-left: 10px;
+    outline-width: 0;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+}
+.feed_inputoptions{
+    display: flex;
+    justify-content: space-evenly;
+}
+.inputoptions{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: gray;
+    padding: 10px;
+    cursor: pointer;
+}
+.inputoptions:hover{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.inputoptions h4{
+    margin-left: 5px;
+    font-family: 'Nunito', sans-serif;
+}
+.center_part{
+    background-color: #efeff1;
+    height: 75vh;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px #808e9b;
+}
+.profile_pic{
+    padding: 10px;
+    display: flex;
+    
+}
+.profile_pic img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.profile_pic p{
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+.post{
+    align-items: center;
+}
+.post img{
+    width: 86vh;
+    border-radius: 10px;
+    height: 50vh;
+    margin-left: 2vh;
+    margin-top: 20px;
+}
+.post img:hover{
+}
+.rightsection{
+    width: 50vh;
+    top: 80px;
+    position: sticky;
+    margin-left: 30px;
+    background-color:#efeff1;
+    border-radius: 10px;
+    height: 65vh;
+    box-shadow: 5px 5px 10px #808e9b;
+}
