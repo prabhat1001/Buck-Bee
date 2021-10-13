@@ -1,0 +1,81 @@
+*{padding: 0;margin: 0;box-sizing: border-box ;}
+.whole{
+    display: flex;
+}
+.profile{
+    width: 44vh;
+    height: 48vh;
+    border: 2px solid gray;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.profile i{
+    font-size: 40px;
+    margin: 10px 0;
+}
+.profile h3{
+    text-align: center;
+    margin-top:0px;
+    margin: 10px 0;
+}
+.firsticon i{
+    color: gold;
+}
+.secondicon i{
+    color: orange;
+}
+.profile h3:hover{
+    background-color: whitesmoke;
+    padding: 0px;
+}
+.profile_content{
+    margin: 10px 30px;
+}
+.allcard{
+    margin-top: 40px;
+    margin-left: 150px;
+    background-color: white;
+}
+.uppercards{
+    display: flex;
+    background-color: white;
+}
+.lowercards{
+    display: flex;
+    background-color: white;
+}
+.picture{
+    width: 17vh;
+    height: 17vh;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 85px;
+}
+.image{
+   
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 115px;
+}
+.card h2{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+}
+.card{
+    transition: transform 0.3s ; 
+    background-color: white;
+    border:1px solid rgb(158, 158, 158);
+    width: 40vh;
+    height: 40vh;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px #808e9b;
+    background-color: rgb(240, 238, 238);
+    cursor: pointer;
+}
