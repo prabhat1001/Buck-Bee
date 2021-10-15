@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-*{padding: 0;margin: 0;box-sizing: border-box ;}
+*{padding: 0;margin: 0;box-sizing: border-box;}
+
+
 body{
-    background-color: white;
+    background-color: #ebebeb;
 }
 .header{
-    width: 100%;
+    width: 100vw;
     position: sticky;
     height: 54px;
     top: 0;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(48, 48, 48); 
     box-shadow: 0px 1px 5px rgb(100, 100, 100);
     justify-content: space-evenly;
     display: flex;
@@ -74,7 +76,8 @@ body{
 }
 .sidebar{
     position: sticky;
-    margin-left: 50px;
+    margin-left: 30px;
+    margin-right: 20px;
     top: 80px;
     width: 40vh;
     border-radius: 10px;
@@ -83,10 +86,9 @@ body{
 }
 .sidebarbottom{
     text-align: left;
-    
     padding: 5px;
     border: 1px solid lightgray;
-    background-color: #efeff1;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #808e9b;
 }
@@ -112,7 +114,7 @@ body{
 }
 .sidebar_recentitem:hover{
     background-color: whitesmoke;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
     color: black;
 }
@@ -131,14 +133,22 @@ body{
     
 }
 .feed_inputcontainer{
-    background-color: #efeff1;
+    background-color: white;
     padding: 10px;
     padding-bottom: 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     box-shadow: 5px 5px 10px #808e9b;
-    
+    padding-top: 15px;
+
 }
+
+h5{
+    font-family: 'Nunito', sans-serif;
+    margin-left: 20px;
+    color: rgb(82, 82, 82);
+}
+
 .account_and_write{
     display: flex;  
 }
@@ -154,12 +164,12 @@ body{
 .feed_input{
     width: 100%;
     border: 1px solid lightgray;
-    border-radius: 30px;
+    border-radius: 100px;
     background-color: white;
     display: flex;
     padding: 5px;
     color: gray;
-    padding-left: 15px;
+    padding-left: 10px;
 }
 .feed_input i{
     margin-top: 5px;
@@ -168,7 +178,7 @@ body{
     display: flex;
 }
 .feed_input form input{
-    width: 68vh;
+    width: 65vh;
     border: none;
     margin-left: 10px;
     outline-width: 0;
@@ -189,14 +199,14 @@ body{
 }
 .inputoptions:hover{
     background-color: whitesmoke;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 .inputoptions h4{
     margin-left: 5px;
     font-family: 'Nunito', sans-serif;
 }
 .center_part{
-    background-color: #efeff1;
+    background-color: white;
     height: 75vh;
     border-radius: 10px;
     margin-top: 10px;
@@ -223,20 +233,33 @@ body{
 }
 .post img{
     width: 86vh;
-    border-radius: 10px;
     height: 50vh;
+    border-radius: 10px;
+    /* height: 100px; */
+    /* width: 100px; */
     margin-left: 2vh;
     margin-top: 20px;
+    transition: all .3s ease-in-out , filter 0s,border-radius 0s;
+    position:static;
 }
+ /* .post img:hover ~ .center_part{
+    height: 80vh;
+}  */
+
 .post img:hover{
+            border-radius: 10px; 
+            transform: scale(1.20,1.16);
+            filter: drop-shadow(0px 8px 5px rgb(71, 70, 70)); 
+            
 }
 .rightsection{
-    width: 50vh;
+    width: 45vh;
     top: 80px;
     position: sticky;
-    margin-left: 30px;
-    background-color:#efeff1;
+    margin-left: 38px;
+    background-color:white;
     border-radius: 10px;
     height: 65vh;
     box-shadow: 5px 5px 10px #808e9b;
+    z-index: -1;
 }
