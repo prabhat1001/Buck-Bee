@@ -104,12 +104,13 @@ body{
     padding-bottom: 10px;
 }
 .sidebar_recentitem .detail{
-    font-size: 20px;
+    font-size: 15px;
+    margin-top: 5px;
+    padding-left: 10px;
 }
-.sidebar_recentitem i{
-    padding-left: 70px;
-    font-size: 30px;
-    padding-right: 10px;
+.sidebar_recentitem img{
+    width: 30px;
+    border-radius: 100%;
 }
 .sidebar_recentitem:hover{
     background-color: whitesmoke;
@@ -166,9 +167,12 @@ h5{
     border-radius: 100px;
     background-color: white;
     display: flex;
-    padding: 10px;
+    padding: 5px;
     color: gray;
     padding-left: 10px;
+}
+.feed_input i{
+    margin-top: 5px;
 }
 .feed_input form{
     display: flex;
