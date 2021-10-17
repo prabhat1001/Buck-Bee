@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\Desktop\\vscodeproject"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.autoSave": "afterDelay",
+		"liveServer.settings.multiRootWorkspaceName": "Buck-Bee"
+	}
+}
