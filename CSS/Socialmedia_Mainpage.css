@@ -93,6 +93,7 @@ body{
     box-shadow: 5px 5px 10px #808e9b;
 }
 .sidebar_recentitem{
+    transition: transform 0.5s ;
     display: flex;
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
@@ -103,19 +104,47 @@ body{
     padding: 5px;
     padding-bottom: 10px;
 }
-.sidebar_recentitem .detail{
-    font-size: 15px;
-    margin-top: 5px;
-    padding-left: 10px;
-}
-.sidebar_recentitem img{
-    width: 30px;
-    border-radius: 100%;
-}
-.sidebar_recentitem:hover{
+.sidebarfirst:hover{
+    transform: scale(1.2);
     background-color: whitesmoke;
     border-radius: 8px;
     cursor: pointer;
+    color: black;
+}
+.sidebarfirst{
+    transition: transform 0.5s ;
+    display: flex;  
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    width: 35vh;
+    height: 10vh;
+    background-color: #eeeef8;
+    color: gray;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding: 5px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 10px #c1c2c4;
+}
+.sidebarfirst .detail{
+    font-size: 15px;
+    margin-top: 25px;
+    padding-left: 10px;
+}
+.sidebarfirst img{
+    width: 60px;
+    border-radius: 100%;
+}
+.sidebar_recentitem:hover{
+    transform: scale(1.1);
+    background-color: whitesmoke;
+    border-radius: 8px;
+    cursor: pointer; 
+    box-shadow: 5px 5px 10px #c1c2c4;
     color: black;
 }
 .sidebar_hash{
@@ -258,9 +287,47 @@ h5{
     top: 80px;
     position: sticky;
     margin-left: 38px;
-    background-color:white;
-    border-radius: 10px;
-    height: 65vh;
-    box-shadow: 5px 5px 10px #808e9b;
+    height: fit-content;
     z-index: -1;
+}
+.upperright{
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+    height: 42vh;
+    background-color: white;
+    box-shadow: 5px 5px 10px #808e9b;
+}
+.lowerright{
+    margin-top: 20px;
+    width: 100%;
+    height: 42vh;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 5px 10px #808e9b;
+}
+.heading{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+.upperboth{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #808e9b;
+    cursor: pointer;
+    width: 40vh;
+    height: 15vh;
+    background-color: rgb(247, 243, 243);
+}
+.lowerboth{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #808e9b;
+    width: 40vh;
+    height: 15vh;
+    background-color: rgb(247, 243, 243);
 }
