@@ -1,0 +1,284 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+:root{
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-blue:#233975
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+h1{
+    font-size :2.25rem;
+    font-weight: 700;
+
+}
+h2{
+    font-size :1.5rem;
+    font-weight: 700;
+
+}
+a{
+    text-decoration: none;
+    color: var(--primary-blue);
+}
+a:hover{
+    text-decoration: underline;
+}
+.small{
+    font-size:80%;
+    text-align: center;
+}
+/* .split-screen{
+    display: flex;
+    flex-direction:column;
+}
+.left{
+    height: 200px;
+
+} */
+.left,.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ /* .left .copy{
+   color: white;
+   text-align: center;  
+   -webkit-font-smoothing:antialiased;
+   -moz-osx-font-smoothing:grayscale;
+
+} */
+
+.pagewrap{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    vertical-align: middle;
+    left: 30%;
+    float: left;
+}
+
+.right{
+    left: 48%;
+    top: 8.5%;
+    width: 30%;
+    height:85%;
+    display: flex;
+    position: absolute;
+    background-color: rgb(238, 231, 231);
+    z-index: -1;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(146, 146, 146) ;
+
+
+}
+
+.right .copy{
+    color: black;
+    text-align: center;
+
+
+}
+right .copy p{
+    margin: 1.5em 0;
+    font-size: 0.875rem;
+
+}
+.right form{
+    width: 328px;
+}
+form input[type="text"],
+ form input[type="email"],
+ form input[type="password"]{
+     display: block;
+     width: 100%;
+     box-sizing: border-box;
+     border-radius: 8px;
+     border: 1px solid #c4c4c4;
+     padding: 1em;
+    
+     margin-bottom: 1.25rem;
+     font-size: 0.875rem;
+ }
+ label{
+     display: block;
+     margin-bottom: 0.5rem;
+     font-size: 0.75rem;
+
+ }
+ .input-container .password{
+     position: relative;
+     display: flex;
+     
+
+ }
+ .showpassword{
+     position: relative;
+ }
+ 
+ .checkbox-container input{
+     position: absolute;
+     opacity: 0;
+     cursor:pointer;
+     height: 0;
+     width: 0;
+ }
+ .checkbox-container{
+     display: block;
+     position: relative;
+     padding-left: 2rem;
+     cursor: pointer;
+     user-select: none;
+     margin: 0 0 1.25rem 0;
+ }
+ .checkbox-container input:checked-.checkmark{
+     background-color: var(--primary- rgb(0, 255, 255));
+     border: 1px solid var(--primary- rgb(0, 255, 255));
+
+ }
+ .checkmark{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border:1px solid #c4c4c4 ;
+  border-radius: 2px;
+  top: -4px;
+  left: 0;
+ }
+ .checkmark:after{
+     content: "";
+     position: absolute;
+     display: none;
+
+ }
+ .checkbox-container input:checked~.checkmark:after{
+     display:block ;
+ }
+ .checkbox-container .checkmark:after{
+     border:solid white;
+     border-width: 0 3px 3px 0;
+     width: 5px;
+     height: 10px;
+     left: 8px;
+     top: 4px;
+     transform: rotate(45deg);
+ }
+ .signup-btn{
+     display: block;
+     width: 100%;
+     background: var(--primary-blue);
+     color: white;
+     font-weight: 700;
+     border: none;
+     padding: 1rem;
+     border-radius: 8px;
+     font-size: 0.75rem;
+     text-transform: uppercase;
+     letter-spacing: 0.5px;
+ }
+ .signup-btn:hover{
+     background: #21c5ca;
+     cursor: pointer;
+
+ }
+ /* @media screen  and(min-width:900px) {
+     .split-screen{
+         flex-direction: row;
+         height: 100vh;
+        
+     }
+     .left,
+     .right{
+         display: flex;
+         width: 50%;
+         height: auto;
+     } 
+    }
+     
+ }*/
+
+ .left img {
+     width: 30%;
+     top: 5%;
+     left: 18%;
+     position: absolute;
+     display: flex;
+     height: 88%;
+     border-radius: 10px;
+     box-shadow: 5px 5px 10px  rgb(94, 93, 93);
+     
+    
+ }
+
+  /* .google3{
+    display: block;
+    width: 93%;
+    background: white;
+    color: black;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-collapse: collapse; 
+    /* border-color: 2px solid ; */
+    /* border-radius: 2px solid blue; */
+
+ 
+ .google2 i{
+     border-color: white;
+     background-color: white;
+     background-color: white;
+     font-size: 27px;
+   
+     background-image: linear-gradient(red yellow green blue);
+ }
+ .google3 button{
+     /* width: 300px;
+     height: 500vh;
+     background-color: white;
+     border: 2px solid blue; */
+     
+     display: block;
+    width: 100%;
+    border: 2px solid blue;
+    background: white;
+    color: black;
+   
+    
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  
+    padding: 10px;
+    padding-top: 2%;
+
+    
+    
+    
+ }
+
+ .google3 button p{
+     /* top: 3px; */
+ }
+ .fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
