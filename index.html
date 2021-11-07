@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media - Main</title>
     <link rel="stylesheet" href="./CSS/Socialmedia_Mainpage.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="body">
-    <div class="main-page"></div>
-        <div class="header">
+    <div class="main-page">
+        <nav class="header">
             <div class="header_left">
                 <img src="./assets/logo.png" alt="">
                 <div class="header_search">
@@ -20,42 +22,40 @@
                 </div>
             </div>
             <div class="header_right">
-                <div class="header_options">
-                    <i class="material-icons headerOption_icon">
+                <input type="checkbox" id="click">
+                <label for="click" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    
+                    <li> 
+                        <a href="#"><i class="material-icons headerOption_icon">
                         home
                     </i>
-                    <h3>Home</h3>
-                </div>
-                <div class="header_options">
-                    <i class="material-icons headerOption_icon">
+                </a>
+                    </li>
+                    <li><i class="material-icons headerOption_icon">
                         people
                     </i>
-                    <h3>My network</h3>
-                </div>
-                <div class="header_options">
-                    <i class="material-icons headerOption_icon">
+                   </li>
+                    <li><i class="material-icons headerOption_icon">
                         chat
                     </i>
-                    <h3>Messenger</h3>
-                </div>
-                <div class="header_options">
-                    <i class="material-icons headerOption_icon">
+                    </li>
+                    <li><i class="material-icons headerOption_icon">
                         notifications
                     </i>
-                    <h3>Notification</h3>
-                </div>
-                <div class="header_options">
-                    <i class="material-icons headerOption_icon">
+                    </li>
+                    <li> <i class="material-icons headerOption_icon">
                         account_circle
                     </i>
-                    <h3>Me</h3>
-                </div>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
         <div class="body_main">
             <div class="sidebar">
                 <div class="sidebarbottom">
-                    <p></p>
                     <div class="sidebarfirst">
                         <img src="./assets/pexels-stefan-stefancik-91227.jpg" alt="">
                         <p class="detail">Miguel Diaz</p>
@@ -66,15 +66,15 @@
                     </div>
                     <div class="sidebar_recentitem">
                         <span class="sidebar_hash">#</span>
-                        <p>Software Engineering</p>
+                        <p>Groups</p>
                     </div>
                     <div class="sidebar_recentitem">
                         <span class="sidebar_hash">#</span>
-                        <p>Design</p>
+                        <p>Saved</p>
                     </div>
                     <div class="sidebar_recentitem">
                         <span class="sidebar_hash">#</span>
-                        <p>Developer</p>
+                        <p>Pages</p>
                     </div>
                 </div>
             </div>
@@ -143,18 +143,67 @@
                        </div>
             </div>
         </div>
+        <div class="checkedforright">
+            <input type="checkbox" id="click2">
+                <label for="click2" class="right-btn">
+                    <i class="material-icons rightsectionicon">
+                        more_vert
+                    </i>
+                </label>
+            
+        </div>  
         <div class="rightsection">
-            <div class="upperright">
-                <h2 class="heading">Announcement</h2>
-                <div class="upperboth" id="abc"></div>
-                <div class="upperboth"></div>
-            </div>
             <div class="lowerright">
-                <h2 class="heading">Blogs</h2>
-                <div class="lowerboth"></div>
-                <div class="lowerboth"></div>
+                <h2 class="heading">Events</h2>
+                <div class="allnews">
+                    <ul>
+                        <li>IOT World in Santa Clara, California
+                            <br>
+                            <span>Nov 2-4</span>
+                        </li>
+                        <li>Level UP Productivity conference...
+                            <br>
+                            <span>Nov 9</span>
+                        </li>
+                        <li>SaaS Connect in San Francisco [Postponed.....
+                            <br>
+                            <span>Nov 9-10</span>
+                        </li>
+                        <li>DevOps Institute SKIL Up Day.
+                            <br>
+                            <span>Dec 1-2</span>
+                        </li>
+                        
+                    </ul>
+                    <h4 class="heading">Show more</h4>
+                </div>
             </div>
         </div>
+        </div>
+        <footer class="footer">
+            <ul>
+                <li> <i class="material-icons headerOption_icon">
+                    home
+                </i>
+                </li>
+                <li><i class="material-icons headerOption_icon">
+                    people
+                </i>
+               </li>
+                <li><i class="material-icons headerOption_icon">
+                    chat
+                </i>
+                </li>
+                <li><i class="material-icons headerOption_icon">
+                    notifications
+                </i>
+                </li>
+                <li> <i class="material-icons headerOption_icon">
+                    account_circle
+                </i>
+                </li>
+            </ul>
+        </footer>
         </div>
 </body>
 </html>
