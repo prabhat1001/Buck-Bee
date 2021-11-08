@@ -4,16 +4,19 @@
 
 body{
     background-color: #ebebeb;
+    overflow-x: hidden;
 }
 .header{
-    width: 100vw;
-    position: sticky;
+    width: 100%;
+    background: fixed;
+    position: fixed;
     height: 54px;
     top: 0;
     background-color: rgb(48, 48, 48); 
     box-shadow: 0px 1px 5px rgb(100, 100, 100);
     justify-content: space-evenly;
     display: flex;
+    z-index: 13;
 }
 .header_left img{
     height: 50px;
@@ -27,6 +30,10 @@ body{
 .header_right ul{
     display: flex;
     list-style: none;
+}
+.main_page{
+    width: 100%;
+    height: fit-content;
 }
 .header_search{
     margin: 10px 0px;
@@ -52,12 +59,13 @@ body{
     margin-right: 40px;
     color: white;
     cursor: pointer;
+    transition: 0.5s ease;
 }
 .header_right ul li i:hover{
-    color: blue;
-    background-color: whitesmoke;
+    color: rgb(255, 217, 0);
     border-radius: 10px;
     padding-top: 5px;
+    transform: scale(1.5);
 }
 .header_right ul li i{
     font-size: 25px;
@@ -74,9 +82,8 @@ body{
 
 .body_main{
     display: flex;
-    margin-top: 35px;
     width: 100%;
-    margin: 0 20px;
+    margin-top: 55px;
 }
 .sidebar{
     position: sticky;
@@ -101,12 +108,15 @@ body{
     display: flex;
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
-    color: gray;
     font-weight: bolder;
     cursor: pointer;
     margin-bottom: 5px;
     padding: 5px;
     padding-bottom: 10px;
+}
+.sidebar_recentitem a{
+    text-decoration: none;
+    color: gray;
 }
 .sidebarfirst:hover{
     transform: scale(1.2);
@@ -159,7 +169,7 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 .feed{
-    width: 90vh;
+    width: 43%;
     margin: 0 20px;
     margin-top: 25px;
     margin-left: 40px;
@@ -211,8 +221,8 @@ h5{
     display: flex;
 }
 .feed_input form input{
-    width: 65vh;
-    border: none;
+    width: 30vw;
+    border: 1px solid black;
     margin-left: 10px;
     outline-width: 0;
     font-weight: 600;
@@ -222,15 +232,16 @@ h5{
     display: flex;
     justify-content: space-evenly;
 }
-.inputoptions{
+.inputoptions a{
     display: flex;
     align-items: center;
+    text-decoration: none;
     margin-top: 15px;
     color: gray;
     padding: 10px;
     cursor: pointer;
 }
-.inputoptions:hover{
+.inputoptions a:hover{
     background-color: whitesmoke;
     border-radius: 8px;
 }
@@ -241,7 +252,7 @@ h5{
 
 .center_part{
     background-color: white;
-    height: 75vh;
+    height: 35%;
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -265,9 +276,31 @@ h5{
 .post{
     align-items: center;
 }
-.post img{
-    width: 86vh;
-    height: 50vh;
+.post1 img{
+    width: 95%;
+    height: 70vh;
+    border-radius: 10px;
+    /* height: 100px; */
+    /* width: 100px; */
+    margin-left: 2vh;
+    margin-top: 20px;
+    transition: all .3s ease-in-out , filter 0s,border-radius 0s;
+    position:static;
+}
+.post2 img{
+    width: 95%;
+    height: 70vh;
+    border-radius: 10px;
+    /* height: 100px; */
+    /* width: 100px; */
+    margin-left: 2vh;
+    margin-top: 20px;
+    transition: all .3s ease-in-out , filter 0s,border-radius 0s;
+    position:static;
+}
+.post3 img{
+    width: 95%;
+    height: 70vh;
     border-radius: 10px;
     /* height: 100px; */
     /* width: 100px; */
@@ -286,21 +319,54 @@ h5{
             filter: drop-shadow(0px 8px 5px rgb(71, 70, 70)); 
             
 }
+.like{
+    list-style: none;
+}
 .rightsection{
-    width: 45vh;
+    width: 22%;
     margin-top: 25px;
     right: 0;
-    margin-right: 70px;
+    margin-right: 100px;
     position: fixed;
     height: fit-content;
     /* z-index: -1; */
 }
 .lowerright{
     width: 100%;
-    height: 50vh;
+    height: 42vh;
     border-radius: 10px;
     background-color: white;
     box-shadow: 5px 5px 10px #808e9b;
+    overflow-y: scroll; 
+}
+::-webkit-scrollbar {
+    width: 05px;
+    height: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(85, 84, 84); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+.upperright{
+    width: 100%;
+    height: 42vh;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 10px #808e9b;
+    margin-bottom: 10px;
 }
 .lowerright h2{
     text-align: center;
@@ -311,22 +377,27 @@ h5{
     border-radius: 10px;
 
 }
-.lowerright .allnews{
+.lowerright .allevents{
     margin-left: 20px;
     margin-top: 10px;
     margin-right: 10px;
 }
-.lowerright .allnews ul li{
-    font-size: 17px;
+.lowerright .allevents ul li{
+    font-size: 14px;
     list-style-type:circle;
     padding: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+.lowerright .allevents ul li a{
+    color: black;
+    text-decoration: none;
 }
 .lowerright .allnews ul li span{
     font-size: 13px;
     margin-left: 20px;
 }
-.lowerright .allnews ul li:hover{
-    background-color: rgb(236, 235, 235);
+.lowerright .allevents ul li:hover{
+    background-color: wheat;
     padding-left: 10px;
     border-radius: 10px;
     cursor: pointer;
@@ -363,10 +434,11 @@ h5{
     margin-left: 50px;
     margin-top: 10px;
 }
-.checkedforright label{
+.footer ul li i:hover{
+    cursor: pointer;
+}
+.checkedforright{
     margin-top: 25px;
-    margin-left: 20px;
-    display: none;
     width: 30px;
     text-align: center;
     height: 30px;
@@ -375,40 +447,49 @@ h5{
     cursor: pointer; 
     position: fixed; 
     right: 0;
+    display: none;
     margin-right: 20px;
     box-shadow: 3px 3px 5px #808e9b;
 }
+.checkedforright i{
+    margin-top: 3px;
+}
 #click2{
-    display:none;
+    display: none;
+}
+.dropdown{
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    margin-left: -150px;
+    display: none;
+}
+.dropdown a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown a:hover{
+    background-color: white;
+    border-radius: 10px;
+    padding: 12px 16px;
 }
 
-@media(max-width:1420px){ 
-    .checkedforright label {
+@media(max-width:1420px){
+    .checkedforright{
         display: block;
-    }
-    .checkedforright i{
-      margin-top: 3px;
-    } 
-    #click2:checked ~ .blank{
-        right: 0%;
-    }
+    }  
     .rightsection{
         display: none;
+    }
+    #click2:checked ~ .dropdown{
+        display: block;
     } 
-    .header_right .right-btn i{
-        display: block;
-        color: white;
-        margin-top: 15px;
+    #click:checked ~ .menu-btn i:before{
+        content:"\f00d";
     }
-    .blank{
-        background-color: black;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        display: block;
-        right: -100%;
-        transition: 0.5s ease;
-    }
+    
     
 }
 @media (max-width: 940px){
@@ -453,20 +534,28 @@ h5{
 }
 @media(max-width:769px){
     .feed{
-        width:70vh
+        width:90vh
     }
     .feed_input form input{
-        width: 51vh;
+        width: 45vh;
 }
 .center_part{
     height: fit-content;
 }
 .post img{
-    width: 66vh;
-    height: 40vh;
+    width: 86vh;
+    height: 50vh;
+}
+.inputoptions i{
+    font-size: 25px;
+    text-align: center;
+}
+.inputoptions h4{
+    font-size: 15px;
+
 } 
 }
-@media(max-width:630px){
+ /* @media(max-width:630px){
     .feed{
         width:50vh
     }
@@ -483,7 +572,7 @@ h5{
 .footer{
     display: block;
 }
-}
+}  */
 @media (max-width:630px){
     .feed{
         width:50vh;
@@ -495,18 +584,16 @@ h5{
     width:30px;
     height:30px;
 }
-.feed_input i{
-    font-size: 15px;
+.post img{
+    width: 46vh;
+    height: 35vh;
 }
 .inputoptions i{
     font-size: 15px;
     text-align: center;
 }
-.inputoptions{
-    display: block;
-}
 .inputoptions h4{
-    font-size: 10px;
+    font-size: 7px;
 
 }
 .header_search i{
@@ -529,17 +616,25 @@ h5{
 }
 .footer{
     width: 100%;
-    height: 40px;
+    height: 45px;
+    display: block;
+    text-align: center;
 }
 .footer ul li i{
     font-size: 20px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.footer ul li i:hover{
+    cursor: pointer;
 }
 }
 @media (max-width:423px){
     .feed{
-        width:40vh;
+        width:50vh;
         margin-left: -20px;
         margin-left: 5px;
+        margin-top: -5px;
     }
     .feed_input form input{
         width: 19vh;
@@ -547,19 +642,95 @@ h5{
 .account_and_write img{
     width:30px;
     height:30px;
-}
+} 
 .feed_input i{
     font-size: 15px;
 }
 .inputoptions i{
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
 }
 .inputoptions{
     display: block;
 }
 .inputoptions h4{
-    font-size: 10px;
+    display: none;
+
+}
+.header_search i{
+    font-size: 20px;
+}
+.header_search input{
+    width: 50px;
+}
+.header{
+    width: 100%;
+    height: 40px;
+}
+.header img{
+    width: auto;
+    height: auto;
+}
+.header_search{
+    width: auto;
+    height: auto;
+}
+.footer{
+    width: 100%;
+    height: 45px;
+    display: block;
+    text-align: center;
+}
+.footer ul li i{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+.footer ul li i:hover{
+    cursor: pointer;
+}
+.center_part .profile_pic img{
+    width: 35px;
+    height: 35px;
+}
+.center_part .profile_pic .statement{
+    font-size: 15px;
+}
+.center_part .post img{
+    width: 46vh;
+}
+}
+@media (max-width:375px){
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .main_page{
+        width: 100%;
+    }
+    .feed{
+        margin-top: -5px;
+        width:40vh;
+    }
+    .feed_input form input{
+        width: 19vh;
+}
+.account_and_write img{
+    width:30px;
+    height:30px;
+} 
+.feed_input i{
+    font-size: 15px;
+}
+.inputoptions i{
+    font-size: 20px;
+    text-align: center;
+}
+.inputoptions{
+    display: block;
+}
+.inputoptions h4{
+    display: none;
 
 }
 .header_search i{
@@ -583,9 +754,16 @@ h5{
 .footer{
     width: 100%;
     height: 40px;
+    display: block;
+    text-align: center;
 }
 .footer ul li i{
-    font-size: 20px;
+    font-size: 15px;
+    margin-left: 35px;
+    margin-top: 5px;
+}
+.footer ul li i:hover{
+    cursor: pointer;
 }
 .center_part .profile_pic img{
     width: 35px;
