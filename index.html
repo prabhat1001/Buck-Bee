@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media - Main</title>
     <link rel="stylesheet" href="./CSS/Socialmedia_Mainpage.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body class="body">
-    <div class="main-page"></div>
-        <div class="header">
+    <div class="main-page">
+        <nav class="header">
             <div class="header_left">
                 <img src="./assets/logo.png" alt="">
                 <div class="header_search">
@@ -20,61 +23,69 @@
                 </div>
             </div>
             <div class="header_right">
-                <div class="header_options">
-                    <i class="material-icons headerOption_icon">
+                <input type="checkbox" id="click">
+                <label for="click" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    
+                    <li> 
+                        <a href="#"><i class="material-icons headerOption_icon">
                         home
                     </i>
-                    <h3>Home</h3>
-                </div>
-                <div class="header_options">
-                    <i class="material-icons headerOption_icon">
+                </a>
+                    </li>
+                    <li><a href="#"><i class="material-icons headerOption_icon">
                         people
                     </i>
-                    <h3>My network</h3>
-                </div>
-                <div class="header_options">
-                    <i class="material-icons headerOption_icon">
+                    </a>
+                   </li>
+                    <li><a href="#"><i class="material-icons headerOption_icon">
                         chat
                     </i>
-                    <h3>Messenger</h3>
-                </div>
-                <div class="header_options">
-                    <i class="material-icons headerOption_icon">
+                    </a>
+                    </li>
+                    <li><a href="#"><i class="material-icons headerOption_icon">
                         notifications
                     </i>
-                    <h3>Notification</h3>
-                </div>
-                <div class="header_options">
-                    <i class="material-icons headerOption_icon">
+                    </a>
+                    </li>
+                    <li><a href="#"><i class="material-icons headerOption_icon">
                         account_circle
                     </i>
-                    <h3>Me</h3>
-                </div>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="material-icons headerOption_icon">
+                            logout
+                        </i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
         <div class="body_main">
             <div class="sidebar">
                 <div class="sidebarbottom">
-                    <p></p>
                     <div class="sidebarfirst">
                         <img src="./assets/pexels-stefan-stefancik-91227.jpg" alt="">
                         <p class="detail">Miguel Diaz</p>
                     </div>
                     <div class="sidebar_recentitem">
                         <span class="sidebar_hash">#</span>
-                        <p>Productivity</p>
+                        <a href="#"><p>Productivity</p></a>
                     </div>
                     <div class="sidebar_recentitem">
                         <span class="sidebar_hash">#</span>
-                        <p>Software Engineering</p>
+                        <a href="#"><p>Groups</p></a>
                     </div>
                     <div class="sidebar_recentitem">
                         <span class="sidebar_hash">#</span>
-                        <p>Design</p>
+                        <a href="#"><p>Saved</p></a>
                     </div>
                     <div class="sidebar_recentitem">
                         <span class="sidebar_hash">#</span>
-                        <p>Developer</p>
+                        <a href="#"><p>Pages</p></a>
                     </div>
                 </div>
             </div>
@@ -91,22 +102,22 @@
                     </div>
                     <div class="feed_inputoptions">
                         <div class="inputoptions">
-                            <i style="color:#70b5f9;" class="material-icons">insert_photo</i>
-                            <h4>Photos</h4>
+                            <a href="#"><i style="color:#70b5f9;" class="material-icons">insert_photo</i>
+                            <h4>Photos</h4></a>
                         </div>
                         <div class="inputoptions">
-                            <i style="color:#e7a33e;" class="material-icons">subscriptions</i>
-                            <h4>Videos</h4>
+                            <a href="#"><i style="color:#e7a33e;" class="material-icons">subscriptions</i>
+                            <h4>Videos</h4></a>
                         </div>
                         <div class="inputoptions">
-                            <i style="color: red;" class="material-icons ">
+                            <a href="#"><i style="color: red;" class="material-icons ">
                                 videocam
                             </i>
-                            <h4>Go Live</h4>
+                            <h4>Go Live</h4></a>
                         </div>
                         <div class="inputoptions">
-                            <i style="color:#7fc15e;" class="material-icons">calendar_view_day</i>
-                            <h4>Write Article</h4>
+                            <a href="#"><i style="color:#7fc15e;" class="material-icons">calendar_view_day</i>
+                            <h4>Write Article</h4></a>
                         </div>
                     </div>
                 </div>
@@ -116,9 +127,18 @@
                                 <p class="statement">Miguel Diaz</p><br>
                             </div>
                             <h5>Bonjour ! I captured a mesmerising view of the Eiffel tower. ❤️</h5>
-                            <div class="post">
+                            <div class="post1">
                                 <img src="./assets/tower.png" alt="">
                     </div>
+                    <ul class="like">
+                        <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-comment-o" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    </ul>
+                    <ul class="save">
+                        <li><i class="fa fa-bookmark" aria-hidden="true"></i></li>
+                    </ul>
+                    
                     
                 </div>
                 <div class="center_part">
@@ -127,10 +147,11 @@
                         <p class="statement">Miguel Diaz</p><br>
                     </div>
                     <h5>A Special Night with Someone  ❤️</h5>
-                    <div class="post">
+                    <div class="post2">
                         <img src="./assets/women.jpg" alt="">  
                     </div>
-                    </div>
+                   
+                        </div>
                 
                     <div class="center_part">
                         <div class="profile_pic">
@@ -138,23 +159,90 @@
                            <p class="statement">Miguel Diaz</p><br>
                        </div>
                        <h5>Beautiful ! ❤️</h5>
-                       <div class="post">
+                       <div class="post3">
                            <img src="./assets/sunset.jpg" alt="">  
                        </div>
             </div>
         </div>
+        <div class="checkedforright">
+            <input type="checkbox" id="click2">
+                <label for="click2" class="right-btn">
+                    <i class="material-icons rightsectionicon">
+                        more_vert
+                    </i>
+                    </label>
+                    <div class="dropdown">
+                    <a href="#">News</a>
+                    <a href="#">Events</a>
+                    <a href="#">Productivity</a>
+        </div>
+        </div>  
         <div class="rightsection">
             <div class="upperright">
-                <h2 class="heading">Announcement</h2>
-                <div class="upperboth" id="abc"></div>
-                <div class="upperboth"></div>
+                <h2 class="heading">News</h2>
             </div>
             <div class="lowerright">
-                <h2 class="heading">Blogs</h2>
-                <div class="lowerboth"></div>
-                <div class="lowerboth"></div>
+                <h2 class="heading">Events</h2>
+                <div class="allevents">
+                    <ul>
+                        <li><a href="#">IOT World in Santa Clara, California
+                            <br>
+                            <span>Nov 2-4</span>
+                            </a>
+                        </li>
+                        <li><a href="#">Level UP Productivity conference...
+                            <br>
+                            <span>Nov 9</span>
+                            </a>
+                        </li>
+                        <li><a href="#">SaaS Connect in San Francisco [Postponed.....
+                            <br>
+                            <span>Nov 9-10</span>
+                            </a>
+                        </li>
+                        <li><a href="#">Institute SKIL Up Day.
+                            <br>
+                            <span>Dec 1-2</span></a>
+                        </li>
+                        <li><a href="#">Institute SKIL Up Day.
+                            <br>
+                            <span>Dec 1-2</span></a>
+                        </li>
+                        <li><a href="#">Institute SKIL Up Day.
+                            <br>
+                            <span>Dec 1-2</span></a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
             </div>
         </div>
+        </div>
+        <footer class="footer">
+            <ul>
+                <li> <i class="material-icons headerOption_icon">
+                    home
+                </i>
+                </li>
+                <li><i class="material-icons headerOption_icon">
+                    people
+                </i>
+               </li>
+                <li><i class="material-icons headerOption_icon">
+                    chat
+                </i>
+                </li>
+                <li><i class="material-icons headerOption_icon">
+                    notifications
+                </i>
+                </li>
+                <li> <i class="material-icons headerOption_icon">
+                    account_circle
+                </i>
+                </li>
+            </ul>
+        </footer>
         </div>
 </body>
 </html>
