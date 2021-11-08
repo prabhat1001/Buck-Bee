@@ -1,12 +1,16 @@
 *{padding: 0;margin: 0;box-sizing: border-box ;}
+body{
+    background-color: rgb(253, 194, 160);
+}
 .whole{
     display: flex;
 }
 .profile{
     width: 44vh;
     height: 48vh;
-    border: 2px solid gray;
+    border-top: 10px solid rgb(250, 80, 80);
     margin-left: 50px;
+    background-color: white;
     margin-top: 40px;
     justify-content: center;
     text-align: center;
@@ -55,11 +59,12 @@
     margin-top: 20px;
 }
 .card img{
-    width: 20vh;
-    height: 20vh;
+    width: 60%;
+    height: 60%;
     border-radius: 50%;
     margin-top: 30px; 
-
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .card h2{
     margin-top: 20px;
@@ -70,8 +75,8 @@
 }
 .card{
     transition: transform 0.5s ; 
-    background-color: white;
-    border:1px solid rgb(158, 158, 158);
+    background-color: rgb(253, 231, 219);
+    border:1px solid rgb(252, 85, 85);
     width: 40vh;
     height: 40vh;
 }
@@ -79,13 +84,24 @@
     z-index: 1;
     transform: scale(1.1);
     box-shadow: 5px 5px 10px #808e9b;
-    background-color: rgb(240, 238, 238);
+    background-color: white;
     cursor: pointer;
+    border-radius: 20px;
 }
-@media (max-width:1000px){
+.businessimage img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 28%;
+    height: 67%;
+}
+@media (max-width:769px){
     .profile{
-        width:30vh;
-        height:38vh;
+        width:20vh;
+        height:40vh;
+    }
+    .businessimage{
+        display: none;
     }
     .picture{
         width: 10vh;
@@ -98,5 +114,48 @@
     .card{
         width: 40vh;
         height: 40vh;
+    }
+    .allcard{
+        margin-left: 100px;
+    }
+    .allcard .uppercards{
+        display: inline;
+    }
+    .allcard .lowercards{
+        display: inline;
+    }
+}
+@media (max-width:480px){
+    .profile{
+        width:60%;
+        height:40vh;
+        margin-left: 100px;
+    }
+    .businessimage{
+        display: none;
+    }
+    .picture{
+        width: 10vh;
+        height: 10vh;
+    }
+    .profile i{
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .card{
+        width: 60%vh;
+        height: 40vh;
+    }
+    .allcard{
+        margin-left: 100px;
+    }
+    .allcard .uppercards{
+        display: inline;
+    }
+    .allcard .lowercards{
+        display: inline;
+    }
+    .whole{
+        display: inline;
     }
 }
