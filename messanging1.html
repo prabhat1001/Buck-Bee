@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Messanging</title>
     <link rel="stylesheet" href="./CSS/messanging1.css">
+    <!-- <link rel="stylesheet" href="../css_projects/messanging1.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 </head>
 <body>
     <div class="page-wrap">
@@ -21,15 +23,20 @@
                 <div class="row">
                     <div class="column">
                         <div class="img_prof">
+
                             <img src="../assets/people1.jpg" alt="Avatar">
-                            <p class="ms1">_living_on_bit_sam_</p>
+                            <p class="ms1">sam</p>
+
+                            <img src="../assets/prof_pic.jpeg" alt="Avatar">
+                            <p class="ms1">sam</p>
+
                         </div>
                     </div>
                     <div class="column">
                         <div class="img_prof">
                             <img src="../assets/people2.jpg" alt="Avatar">
                             <p class="ms1">
-                                _nehaa_dadreamer_
+                                _neha_daydream_
                             </p>
                         </div>
                     </div>
@@ -86,8 +93,8 @@
                     </div>
                 </div>
                 <div class="row2">
-                    <p class="msg3">Sanchita Sarkar</p><br><br>
-                    <p class="msg2">hey whatsup</p>
+                    <p class="msg3">Sanchita Sarkar</p>
+                    <p class="msg2">hey whatsup are you there?</p>
                 </div>
                 </li>
                 </button>
@@ -100,8 +107,8 @@
                     </div>
                 </div>
                 <div class="row2">
-                    <p class="msg3">Sherya Ghosal</p><br><br>
-                    <p class="msg2">hello</p>
+                    <p class="msg3">Sherya Ghosal</p>
+                    <p class="msg2">Meet me today at 10am sharp.</p>
                 </div>
                 </li>
                 </button>
@@ -114,7 +121,7 @@
                     </div>
                 </div>
                 <div class="row2">
-                    <p class="msg3">Atif Aslam</p><br><br>
+                    <p class="msg3">Atif Aslam</p>
                     <p class="msg2">I am there for you always.</p>
                 </div>
                 </li>
@@ -128,7 +135,7 @@
                     </div>
                 </div>
                 <div class="row2">
-                    <p class="msg3">Kishore Kumar</p><br><br>
+                    <p class="msg3">Kishore Kumar</p>
                     <p class="msg2">ping me up tummorow.</p>
                 </div>
                 </li>
@@ -142,7 +149,7 @@
                     </div>
                 </div>
                 <div class="row2">
-                    <p class="msg3">Rahul Mishra</p><br><br>
+                    <p class="msg3">Rahul Mishra</p>
                     <p class="msg2">Lets meetup someday.</p>
                 </div>
                 </li>
@@ -157,7 +164,7 @@
                     </div>
                 </div>
                 <div class="row2">
-                    <p class="msg3">Raj Shekar</p><br><br>
+                    <p class="msg3">Raj Shekar</p>
                     <p class="msg2">Lets go for a movie this weekend.</p>
                 </div>
                 </li>
@@ -171,8 +178,8 @@
                     </div>
                 </div>
                 <div class="row2">
-                    <p class="msg3">Tiasha Bose</p><br><br> 
-                    <p class="msg2" style="text-align: left;">Don't call me after 10pm just text me.</p>
+                    <p class="msg3">Tiasha Bose</p> 
+                    <p class="msg2">Do call me after 10pm tonight.</p>
                 </div>
                 </li>
                 </button>
@@ -188,7 +195,7 @@
             <div class="file1">
 
             <input type="file" id="actual-btn" hidden/>
-            <label for="actual-btn"><img src="../assets/upload1.png" height="40px" width="40px" alt=""></label>
+            <label for="actual-btn"><img src="../assets/upload1.png" height="35px" width="35px" alt=""></label>
             </div>                
                         
             <div class="dropdown" style="position: absolute; right: -1px;">
@@ -202,6 +209,52 @@
               </div>
         </div>
     </div>
+
+    <script src="../javascript_projects/comment_sec1.js"></script>
+          <script>
+            //   var blog,serial;
+              var blog;
+              function readFom() {
+            //   serial = document.getElementById("sno").value;
+              blog = document.getElementById("blog").value;
+              console.log(blog);
+              }
+            //   document.getElementById("insert").onclick = function ()
+              {
+              if(event.keyCode == 13){
+                readFom();
+
+                        // document.getElementById('btnSearch').click()
+              }
+              
+
+              firebase
+              .database()
+              .ref("blogs/" + blog)
+              .set({
+                Blog: blog,
+                // Serial: serial,
+              });
+              alert("Data Inserted");
+            //   document.getElementById("sno").value = "";
+              document.getElementById("blog").value = "";
+              };
+              document.getElementById("delete").onclick = function () {
+              readFom();
+
+              firebase
+                .database()
+                .ref("blogs/" + blog)
+                .remove();
+              alert("Data Deleted");
+            //   document.getElementById("sno").value = "";
+              document.getElementById("blog").value = "";
+              };
+          </script>
+
+          <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+          <script src="../javascript_projects/comment2_config.js"></script>
     
 </body>
 </html>
