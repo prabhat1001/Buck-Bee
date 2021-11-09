@@ -222,7 +222,7 @@ h5{
 }
 .feed_input form input{
     width: 30vw;
-    border: 1px solid black;
+    border: none;
     margin-left: 10px;
     outline-width: 0;
     font-weight: 600;
@@ -252,7 +252,7 @@ h5{
 
 .center_part{
     background-color: white;
-    height: 35%;
+    height: 32%;
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -319,8 +319,27 @@ h5{
             filter: drop-shadow(0px 8px 5px rgb(71, 70, 70)); 
             
 }
+.likeicons{
+    margin-top: 30px;
+    display: flex;
+}
+.likeicons ul li i{
+    font-size: 25px;
+}
 .like{
     list-style: none;
+    display: flex;
+}
+#click3{
+    
+}
+#click3:checked~{
+    color: red;
+}
+.save{
+    list-style: none;
+    /* margin-left: 80%; */
+    
 }
 .rightsection{
     width: 22%;
@@ -333,7 +352,7 @@ h5{
 }
 .lowerright{
     width: 100%;
-    height: 42vh;
+    height: 44vh;
     border-radius: 10px;
     background-color: white;
     box-shadow: 5px 5px 10px #808e9b;
@@ -367,6 +386,22 @@ h5{
     background-color: white;
     box-shadow: 5px 5px 10px #808e9b;
     margin-bottom: 10px;
+    overflow-y: scroll; 
+}
+.more a{
+    text-align: center;
+    text-decoration: none;
+    
+}
+.more h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+}
+.more h3:hover{
+    background-color: #e0ebf5;
+    border-radius: 10px;
 }
 .lowerright h2{
     text-align: center;
@@ -392,11 +427,38 @@ h5{
     color: black;
     text-decoration: none;
 }
-.lowerright .allnews ul li span{
+.lowerright .alleventss ul li span{
     font-size: 13px;
     margin-left: 20px;
 }
 .lowerright .allevents ul li:hover{
+    background-color: wheat;
+    padding-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.upperright .allnews{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.upperright .allnews ul li{
+    font-size: 14px;
+    list-style-type:circle;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+.upperright .allnews ul li a{
+    color: black;
+    text-decoration: none;
+}
+.upperright .allnews ul li span{
+    font-size: 13px;
+    margin-left: 20px;
+}
+.upperright .allnews ul li:hover{
     background-color: wheat;
     padding-left: 10px;
     border-radius: 10px;
@@ -486,9 +548,6 @@ h5{
     #click2:checked ~ .dropdown{
         display: block;
     } 
-    #click:checked ~ .menu-btn i:before{
-        content:"\f00d";
-    }
     
     
 }
