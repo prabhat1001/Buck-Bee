@@ -1,6 +1,6 @@
 # Buck-Bee
 
-<img src="https://user-images.githubusercontent.com/71027441/136687108-1b061323-020a-4904-8ca1-12102ce4d601.png" width="100%" height="500px">
+<img src="assets/BuckBeeofficiallogo.png" width="100%" height="500px">
 
 Introduction- 
 
