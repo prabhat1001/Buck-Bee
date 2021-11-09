@@ -1,6 +1,6 @@
 # Buck-Bee
 
-<img src="assets/BuckBeeofficiallogo.png" width="100%" height="400px">
+<img src="assets/BuckBeeofficiallogo.png" width="100%" height="440px">
 
 Introduction- 
 
