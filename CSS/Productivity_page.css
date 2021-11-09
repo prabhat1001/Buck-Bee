@@ -93,7 +93,7 @@ body{
     text-align: center;
 }
 .profile i{
-    font-size: 40px;
+    font-size: 35px;
     margin: 10px 0;
 }
 .profile_content{
@@ -207,7 +207,7 @@ body{
 @media (max-width:480px){
     .profile{
         width:60%;
-        height:40vh;
+        height:50vh;
         margin-left: 100px;
     }
     .businessimage{
@@ -222,10 +222,10 @@ body{
         margin: 10px 0;
     }
     .card{
-        width: 60%vh;
-        height: 40vh;
     }
     .allcard{
+        width:60%;
+        height:50vh;
         margin-left: 100px;
     }
     .allcard .uppercards{
