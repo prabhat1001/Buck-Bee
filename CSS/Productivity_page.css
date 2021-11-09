@@ -5,90 +5,19 @@ body{
     background-color: #ffe99f;
 }
 
-.header{
-    width: 100%;
-    background: fixed;
-    position: fixed;
-    height: 54px;
-    top: 0;
-    background-color: rgb(48, 48, 48); 
-    box-shadow: 0px 1px 5px rgb(100, 100, 100);
-    justify-content: space-evenly;
-    display: flex;
-    z-index: 13;
-}
-
-.header_left img{
-    height: 50px;
-    margin: 3px;
-    margin-right: 100px;
-    
-}
-.header_left{
-    display: flex;
-}
-.header_right ul{
-    display: flex;
-    list-style: none;
-}
-
-.header_search{
-    margin: 10px 0px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    height: 34px;
-    background-color: white;
-}
-.header_search input{
-    outline: none;
-    border: none;
-    width: 220px;
-    background: none;
-}
-.header_right ul li i{
-    margin-top: 10px;
-    padding: 0px 20px;
-    align-items: center;
-    padding-top: 5px;
-    flex-direction: column;
-    margin-right: 40px;
-    color: white;
-    cursor: pointer;
-    transition: 0.5s ease;
-}
-.header_right ul li i:hover{
-    color: rgb(255, 217, 0);
-    border-radius: 10px;
-    padding-top: 5px;
-    transform: scale(1.5);
-}
-.header_right ul li i{
-    font-size: 25px;
-}
-.header_right .menu-btn i{
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    display: none;
-}
-#click{
-    display:none;
-}
-
+/* ------------------------------------------------------------------ */
 .whole{
     display: flex;
 }
 .profile{
     width: 44vh;
-    height: 48vh;
+    height: 50vh;
     border-top: 40px solid rgb(255, 207, 51);
     margin-left: 50px;
     box-shadow: 5px 5px 10px #4b4b4b60 ;
     background-color: white;
     border-radius: 10%;
-    margin-top: 40px;
+    margin-top: 80px;
     justify-content: center;
     text-align: center;
 }
@@ -102,6 +31,12 @@ body{
 .profile_content h3{
     margin: 10px;
     padding: 5px;  
+}
+
+.badges{
+    display: flex;
+    margin-top: -13px;
+    margin-left: 100px;
 }
 .firsticon i{
     color: gold;
@@ -117,7 +52,7 @@ body{
     margin: 20px 30px;
 } */
 .allcard{
-    margin-top: 40px;
+    margin-top: 80px;
     margin-left: 150px;
     /* background-color: white; */
 }
@@ -203,7 +138,27 @@ body{
     .allcard .lowercards{
         display: inline;
     }
+
+    .header_search i{
+        font-size: 20px;
+    }
+    .header_search input{
+        width: 50px;
+    }
+    .header{
+        width: 100%;
+        height: 40px;
+    }
+    .header img{
+        width: auto;
+        height: auto;
+    }
+    .header_search{
+        width: auto;
+        height: auto;
+    }
 }
+
 @media (max-width:480px){
     .profile{
         width:60%;
@@ -221,8 +176,7 @@ body{
         font-size: 30px;
         margin: 10px 0;
     }
-    .card{
-    }
+   
     .allcard{
         width:60%;
         height:50vh;
