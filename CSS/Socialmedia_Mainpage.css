@@ -325,20 +325,23 @@ h5{
 }
 .likeicons ul li i{
     font-size: 25px;
+    margin-left:10px ;
+    color: #808e9b;
 }
 .like{
     list-style: none;
     display: flex;
+    margin-left: 20px;
 }
 #click3{
-    
+    display: none;
 }
 #click3:checked~{
     color: red;
 }
 .save{
     list-style: none;
-    /* margin-left: 80%; */
+    margin-left: 70%; 
     
 }
 .rightsection{
@@ -432,9 +435,9 @@ h5{
     margin-left: 20px;
 }
 .lowerright .allevents ul li:hover{
-    background-color: wheat;
+    background-color: rgb(211, 210, 209);
     padding-left: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -459,9 +462,9 @@ h5{
     margin-left: 20px;
 }
 .upperright .allnews ul li:hover{
-    background-color: wheat;
+    background-color: rgb(199, 197, 194);
     padding-left: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
 .heading{
