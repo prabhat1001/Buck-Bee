@@ -2,6 +2,7 @@
 <!-- Coding by CodingLab | www.codinglabweb.com-->
 <html lang="en" dir="ltr">
   <head>
+    <title>Verification of Account</title>
     <meta charset="UTF-8">
     <!--<title> Login and Registration Form in HTML & CSS | CodingLab </title>-->
     <link rel="stylesheet" href="./CSS/Signin-Signup-NEW.css">
@@ -43,11 +44,11 @@
                 <input type="password" id="password1" name="password" placeholder="Enter your password" required>
               </div>
               <div class="text">
-                <input type="checkbox" onclick="myFunction()" />Show Password <br><br>
+                <input type="checkbox" onclick="myFunctionlogin()" />Show Password <br><br>
               </div>
 
               <script>
-                function myFunction() {
+                function myFunctionlogin() {
                   var x = document.getElementById("password1");
                   if (x.type === "password") {
                     x.type = "text";
@@ -81,11 +82,11 @@
               </div>
 
               <div class="text">
-                <input type="checkbox" onclick="myFunction()" />Show Password <br><br>
+                <input type="checkbox" onclick="myFunctionsignup()" />Show Password <br><br>
               </div>
 
               <script>
-                function myFunction() {
+                function myFunctionsignup() {
                   var x = document.getElementById("password");
                   if (x.type === "password") {
                     x.type = "text";
