@@ -6,6 +6,11 @@
 
 }
 
+body{
+    overflow-x: hidden;
+}
+
+
 #more {display: none;}
 
 .file1 label {
@@ -161,6 +166,121 @@ section.blog_content
     border-radius: 10px;
     box-shadow: 5px 5px 10px #808e9b;
 }
+
+.header{
+    width: 100%;
+    
+    position: fixed;
+    height: 54px;
+    top: 0;
+    background-color: rgb(48, 48, 48); 
+    box-shadow: 0px 1px 5px rgb(100, 100, 100);
+    justify-content: space-evenly;
+    display: flex;
+    z-index: 13;
+}
+.header_left img{
+    height: 50px;
+    margin: 3px;
+    margin-right: 100px;
+    
+}
+.header_left{
+    display: flex;
+}
+.header_right ul{
+    display: flex;
+    list-style: none;
+}
+.main_page{
+    width: 100%;
+    height: fit-content;
+}
+.header_search{
+    margin: 10px 0px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    height: 15px;
+    background-color: white;
+}
+.header_search input{
+    outline: none;
+    border: none;
+    width: 220px;
+    background: none;
+}
+.header_right ul li i{
+    margin-top: 10px;
+    padding: 0px 20px;
+    align-items: center;
+    padding-top: 5px;
+    flex-direction: column;
+    margin-right: 40px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.header_right ul li i:hover{
+    color: rgb(255, 217, 0);
+    border-radius: 10px;
+    padding-top: 5px;
+    transform: scale(1.5);
+}
+.header_right ul li i{
+    font-size: 25px;
+}
+.header_right .menu-btn i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display:none;
+}
+@media (max-width: 940px){
+    .header_right .menu-btn i{
+        display: block;
+        color: white;
+        margin-top: 15px;
+    }
+    #click:checked ~ ul{
+        right: 0%;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content:"\f00d";
+    }
+    .rightsection{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    
+    .header_right ul{
+        position: fixed;
+        top: 55px;
+        right: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        align-items: center;
+        text-align: center;
+        transition: 0.5s ease;
+    }
+    .header_right ul li i{
+        margin: 30px 0;
+        font-size: 30px;
+    }
+    .header_right ul li i:hover{
+        color: cyan;
+        background-color: gray;
+    }  
+}
+
 .section.blog_content2 .video1{
 left: 100px;
 
@@ -2701,4 +2821,4 @@ form input[type="submit"]
         position: absolute;
         width: 95%;
     }
-}
+
