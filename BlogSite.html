@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Section</title>
+    <link rel="stylesheet" href="./CSS/BlogSite.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    rel="stylesheet">
+</head>
+<body>
+    <div class="page_wrap"></div>
+
+    <nav class="header">
+        <div class="header_left">
+            <img src="./assets/BUCK BEE.png" alt="">
+            <div class="header_search">
+                <i class="material-icons"> search</i>
+                <input type="text" placeholder="Search" />
+            </div>
+        </div>
+        <div class="header_right">
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                
+                <li> 
+                    <a href="https://prabhat1001.github.io/Buck-Bee/index.html"><i class="material-icons headerOption_icon">
+                    home
+                </i>
+            </a>
+                </li>
+                <li><a href="#"><i class="material-icons headerOption_icon">
+                    people
+                </i>
+                </a>
+               </li>
+                <li><a href="https://prabhat1001.github.io/Buck-Bee/messanging1.html"><i class="material-icons headerOption_icon">
+                    chat
+                </i>
+                </a>
+                </li>
+                <li><a href="#"><i class="material-icons headerOption_icon">
+                    notifications
+                </i>
+                </a>
+                </li>
+                <li><a href="https://prabhat1001.github.io/Buck-Bee/Profile_Page.html"><i class="material-icons headerOption_icon">
+                    account_circle
+                </i>
+                </a>
+                </li>
+                <li>
+                    <a href="https://prabhat1001.github.io/Buck-Bee/Signin-Signup-NEW.html"><i class="material-icons headerOption_icon">
+                        logout
+                    </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class=blog_wrt1>
+            <section class="blog_writing">
+                <div class="img_prof">
+                    <img src="../assets/prof_pic.jpeg" alt="Avatar" width="52" height="52" style="position: absolute; top: 2px; border: 2px solid black; border-radius: 50%;">
+                </div>
+                <!-- <div class="right"> -->
+                <div class="search_box">
+                    <form action="post">
+                        <!-- <div><input type="text" name="text_box1" id="text1"  placeholder="What's on your mind ?" style="margin-top: 20px; margin-left: 60px; position: relative; padding-top: 6px;">
+                        <input type="submit" value="POST" style="margin-top: -2px; margin-left: 65px;margin-bottom: 20px; padding-bottom: 10px; display:flex; float:initial; height: 26px; width: 55px; position: relative; justify-content: center;padding-top: 6px;top: -1px; padding-bottom: 10px; float:inline-start; text-indent: 0%; font-size: 15px;">
+                         -->
+                         <div class="form">
+                             <!-- <input type="text" name="Serial_No" id="sno" /> <br /><br /> -->
+                        <div class="file1" style="top: 10%; padding-top: 10px;">
+                             <input type="text"  name="Blogs" id="blog" style="position: absolute; top: 10%; " /> <br /><br />
+
+                             <input type="file" id="actual-btn" hidden/>
+                            <label for="actual-btn"><img class="pht1" src="./assets/icons8-plus-+-64.png" height="40px" width="40px" alt=""></label>
+                          </div>
+                            </div>
+                    
+                          <div class="buttons">
+                            <button id="insert">Insert</button>
+                            <button id="delete">Delete</button>
+                          </div>
+
+                        <!-- <div class="file1" style="top: 10%; padding-top: 10px;"> -->
+                            <!-- <input type="file" id="select_file" hidden>
+                            <label for="select_file"><i class="fa fa-upload"></i></label> -->
+
+                            <!-- <input type="file" id="actual-btn" hidden/>
+                            <label for="actual-btn"><img class="pht1" src="../assets/upload.png" height="40px" width="40px" alt=""></label> -->
+                            
+                            <!-- <style>
+                               .file1 label {
+                          background-color: #efeff1;
+                          color: black;
+                          padding: 0.5rem;
+                          font-family: sans-serif;
+                          border-radius: 0.3rem;
+                          cursor: pointer;
+                          margin-top: 1rem;
+                        }
+                            </style> -->
+                        </div>
+                        <!-- <input type="submit" value="post" name="upload" style=" display:flex; float:initial; height: 15px; width: 50px; position: relative; justify-content: center; text-transform: uppercase;"> -->
+                    </form>
+                <!-- </div> -->
+            </div>
+            </section>
+        </div>
+
+        <script src="../javascript_projects/comment2_config.js"></script>
+          <script>
+            //   var blog,serial;
+              var blog;
+              function readFom() {
+            //   serial = document.getElementById("sno").value;
+              blog = document.getElementById("blog").value;
+              console.log(blog);
+              }
+              document.getElementById("insert").onclick = function () {
+              readFom();
+
+              firebase
+              .database()
+              .ref("blogs/" + blog)
+              .set({
+                Blog: blog,
+                // Serial: serial,
+              });
+              alert("Data Inserted");
+            //   document.getElementById("sno").value = "";
+              document.getElementById("blog").value = "";
+              };
+              document.getElementById("delete").onclick = function () {
+              readFom();
+
+              firebase
+                .database()
+                .ref("blogs/" + blog)
+                .remove();
+              alert("Data Deleted");
+            //   document.getElementById("sno").value = "";
+              document.getElementById("blog").value = "";
+              };
+          </script>
+
+          <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+          <script src="../javascript_projects/comment2_config.js"></script>
+
+
+        <section class="blog_content">
+            <div class="cont_1">
+                <div class="img_prof2">
+                    <img src="../assets/prof_pic.jpeg" alt="Avatar" width="52" height="52" style="border: 2px solid black; border-radius: 50%;">
+                    <label for="name" style="float: inline-end;position: absolute;padding-left: 8px; padding-top: 10px;">Person's Name</label>
+                    <label for="caption" style="font-size: 15px;">Write something defining the post</label>
+                    <div class="dropdown" style="position: absolute; right: -1px;">
+                        <button class="dropbtn" style="border: 0;background: none; float: right;"><i class="fa fa-ellipsis-h" aria-hidden="true" style="  "></i></button>
+                        <div class="dropdown-content">
+                          <a href="#">Save Post</a>
+                          <a href="#">Delete Post</a>
+                          <a href="#">Report Post</a>
+                        </div>
+                      </div>
+                    
+                    <!-- <label for="caption" style="font-size: 15px;">Write something defining the post</label> -->
+                    <!-- <p class="blog_cont">Lorem ipsum dolor sit amet consectetur adipisicing el Magnam perspiciatis ullam sint nobis distinctio mollitia, voluptatibus ab alias velit tenetur at maiores vitae repudiandae, architecto quae. Commodi aperiam quisquam voluptatum placeat ut reprehenderit laudantium tempore porro praesentium vitae quos pariatur optio cumque ipsa, minus, dolore natus ad excepturi maxime itaque quaerat. Numquam, sunt! Harum, odit fuga! Ut consequuntur explicabo sequi labore nostrum atque mollitia quod magni. Fugiat odit facere iste ipsa nostrum expedita odio sapiente tempora aperiam, non ducimus pariatur consectetur aspernatur debitis aliquid est nesciunt sit, fugit nobis in. Dolorem voluptatibus quibusdam doloribus laboriosam nostrum, itaque minima sed animi quia fuga et. Ducimus est provident suscipit quod veritatis, reiciendis quis quibusdam repudiandae rerum saepe ullam numquam nam perferendis distinctio exercitationem eos similique sit necessitatibus adipisci recusandae a corporis mollitia. Eius obcaecati, esse distinctio voluptatem numquam, nemo, incidunt quasi pariatur debitis iste culpa quod blanditiis ullam dolore sint . Obcaecati eos dicta delectus ex dolores commodi sint, sed veniam ea tenetur itaque impedit architecto quaerat molestiae,ex dolores commodi sint,
+                         sed ed impedit architecto ed Distinctio  Distinctio  impedit architecto ed  Distinctio.</p> -->
+
+                         <p class="blog_cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+                        <button class="para_button" onclick="myFunctionn()" id="myBtn">Read more</button>
+                    <br><br>
+                    <hr size="0.5px" width="98%" color="lightgrey" style="height: 0.5px; justify-content: center; margin-left: auto; margin-right: auto;">
+                    <div class="like1">
+                    <nav class="nav_1" style="display: inline-block;">
+                        <ul style="list-style: none;display: inline-block; padding: 0px 20px; justify-content: center;">
+                            <!-- Script -->
+                            <li style=" display: inline-block; line-height: 80px;">
+                                <div id="poke" class="pok2"> 
+                                    <button style="border: none;background-color: #efeff1;">
+                                        <i class="fa fa-heart" aria-hidden="false" style="background-color: #efeff1; border: none; font-size: 25px;position: static; display: block; padding: 10px 13px; top: 78%;"></i>
+                                    </button>
+                                    
+                                </div>
+                            </li>
+                            
+                            <script>
+                                function myFunctionn() 
+                                {
+                                    var dots = document.getElementById("dots");
+                                    var moreText = document.getElementById("more");
+                                    var btnText = document.getElementById("myBtn");
+
+                                    if (dots.style.display === "none") 
+                                    {
+                                        dots.style.display = "inline";
+                                        btnText.innerHTML = "Read more"; 
+                                        moreText.style.display = "none";
+                                    } 
+                                    else 
+                                    {
+                                        dots.style.display = "none";
+                                        btnText.innerHTML = "Read less"; 
+                                        moreText.style.display = "inline";
+                                    }
+                                }
+                            </script>
+                    
+                            <li style=" display: inline-block; line-height: 80px;">
+                                <div id="poke2">
+                                    <button onclick="geekPrompt();" value="Write a comment..." style="border: none;background-color: #efeff1;">
+                                        <i class="fa fa-commenting-o" aria-hidden="false" style="background-color: #efeff1; border: none; font-size: 25px;position: static; display: block; padding: 10px 15px;top: 78%;left: 12%;"></i>
+                                    </button>
+                                </div>
+                            </li>
+
+                            <li style=" display: inline-block; line-height: 80px;">
+                                <div id="poke3">
+                                    <button style="border: none;background-color: #efeff1;">
+                                        <i class="fa fa-share-square-o" aria-hidden="false" style="background-color: #efeff1; border: none; font-size: 25px;position: static; display: block; padding: 10px 15px; top: 78%;left: 21%;"></i>
+                                    </button>
+                                </div>
+                                <!-- <div id="counter3" style="position: absolute; top: 82%;left: 22%;">0 Shares</div> -->
+                            </li>
+
+                            
+
+                            <li style=" display: inline-block; line-height: 80px;">
+                                <div id="poke" class="pok5">
+                                    <button style=" border: none;background-color: #efeff1;">
+                                        <i class="fa fa-bookmark" aria-hidden="false" style="background-color: #efeff1; border: none; font-size: 25px;position: static; display: block; padding: 10px 15px;top: 78%; "></i>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    </div>
+                    <hr size="0.5px" width="98%" color="lightgrey" style="margin-top: 10px; height: 0.5px; justify-content: center; margin-left: auto; margin-right: auto;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Javascript for like button -->
+        <script type='text/javascript'>
+            
+
+            function geekPrompt() {
+				// var x = prompt("Enter your comment here : ");
+                // var x = prompt("Enter your comment here : ");
+                // var x = window.resizeTo(200,500);
+                var x=window.prompt("Enter your comment here : ");
+
+                // var x = window.open("myWindowName", "resizable");
+                  
+				document.write("Your comment : " + x);
+			}
+            </script>
+
+
+        <section class="blog_content2">
+            <div class="cont_2">
+                <div class="img_prof3">
+                    <img src="../assets/prof_pic.jpeg" alt="Avatar" width="52" height="52" style="border: 2px solid black; border-radius: 50%;">
+                    <label for="name" style="float: inline-end;position: absolute;padding-left: 8px; padding-top: 10px;">Person's Name</label>
+                    <!-- <i class="fa fa-bars" aria-hidden="true" style=" position: absolute; right: -1px; top: -1px; padding-top: 10px; padding-right: 10px; "></i> -->
+                    <label for="caption" style="font-size: 15px; padding-bottom: 5px;">Write something defining the post</label>
+                    <div class="dropdown" style="position: absolute; right: -1px;">
+                        <button class="dropbtn" style="border: 0;background: none; float: right;"><i class="fa fa-ellipsis-h" aria-hidden="true" style="  "></i></button>
+                        <div class="dropdown-content">
+                          <a href="#">Save Post</a>
+                          <a href="#">Delete Post</a>
+                          <a href="#">Report Post</a>
+                        </div>
+                      </div>
+                    <br><br>
+                    <div class="yt_vid">
+    
+                        <iframe class="video1" src="https://www.youtube.com/embed/NvQsPiDK1I8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="justify-content: center;"></iframe>
+                    
+                        <!-- <iframe width="690" height="315"
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY" style="display: flex; justify-content: center; top: 5px; position: relative; align-content: center; align-items: center; float: none;">
+                    </iframe> -->
+                    <!-- </span> -->
+                    <br>
+                    <!-- <hr size="1px" width="103%" color="black" style="height: 0.5px; justify-content: center; margin-left: auto; margin-right: auto;"> -->
+                    <hr size="0.5px" width="98%" color="lightgrey" style="height: 0.5px; justify-content: center; margin-left: auto; margin-right: auto;">
+                    </div>
+                    <div class="like1">
+                    <nav class="nav_1" style="display: inline-block;">
+                        <ul style="list-style: none;display: inline-block; padding: 0px 20px; ">
+
+                            <li style=" display: inline-block; line-height: 80px;">
+                                <div id="poke_like" class="pok2"> 
+                                    <button onclick="submitButtonStyle()" type="submit" class="stylebutton" style=" border: none; background-color: #efeff1;">
+                                        <i class="fa fa-heart" aria-hidden="false" style="background-color: #efeff1; border: none; font-size: 25px;position: static; display: block; padding: 10px 15px; top: 83%;"></i>
+                                        <!-- <i class="fa fa-heart" aria-hidden="false" style="background-color: #efeff1; border: none; font-size: 25px;position: static; display: block; padding: 10px 13px; top: 78%;"></i> -->
+
+                                    </button>
+                                    <!-- <div id="counter_like" style="position: absolute; top: 84%;left: 3.7%;">0 Likes</div> -->
+                                    
+                                </div>
+                            </li>
+                
+
+                            <li style=" display: inline-block; line-height: 80px;">
+                                <div id="poke2">
+                                    <button onclick="geekPrompt();" value="Write a comment..." style="border: none;background-color: #efeff1;">
+                                        <i class="fa fa-commenting-o" aria-hidden="false" style="background-color: #efeff1; border: none; font-size: 25px;position: static; display: block; padding: 10px 15px;top: 83%;left: 12%;"></i>
+                                    </button>
+                                </div>
+                                <!-- <div id="counter2" style="position: absolute; top: 82%;left: 13%;">0 Cmts</div> -->
+                            </li>
+
+                            <li style=" display: inline-block; line-height: 80px;">
+                                <div id="poke_shr">
+                                    <button style="border: none;background-color: #efeff1;">
+                                        <i class="fa fa-share-square-o" aria-hidden="false" style="background-color: #efeff1; border: none; font-size: 25px;position: static; display: block; padding: 10px 15px; top: 83%;left: 21%;"></i>
+                                    </button>
+                                </div>
+                                <!-- <div id="counter_shr" style="position: absolute; top: 84%;left: 22%;">0 Shares</div> -->
+                            </li>
+
+
+                            <li style=" display: inline-block; line-height: 80px;">
+                                <div id="poke" class="pok5">
+                                    <button style=" border: none;background-color: #efeff1;">
+                                        <i class="fa fa-bookmark" aria-hidden="false" style="background-color: #efeff1; border: none; font-size: 25px;position: static; display: block; padding: 10px 15px;top: 83%; left: 90%"></i>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    </div>
+                    <hr size="0.5px" width="98%" color="lightgrey" style="height: 0.5px; justify-content: center; margin-left: auto; margin-right: auto;">
+
+        </section>
+    </main>
+
+    <script>
+        function submitButtonStyle() { 
+        document.getElementsByClassName("stylebutton").style.backgroundColor = "red"; 
+        document.getElementsByClassName("stylebutton").style = "red";
+    }
+    </script>
+
+    
+    <!-- <aside class="left">  
+    </aside> -->
+
+         <aside class="right">
+            <div class="suggested_1" style="">
+                <h2 style="padding-top: 10px; font-size: 20pxpx;">Suggested Blogs</h2><br>
+                <hr size="0.5px" width="155%" color="lightgrey" style="position: absolute; width: 95%; top:15%; margin: 7px; height: 0.5px; justify-content: center; margin-left: auto; margin-right: auto;"> 
+            
+                <div class="sug_vd1" id="demo1" style="position: absolute; top:19%">
+                <button onclick="myFunction1()">
+                    <i class="fa fa-times" aria-hidden="true" style="position: absolute;display:inline-block; right: 6px; top: 10%;"></i>
+                </button>
+            <img class="img4" src="../assets/js1.png" alt="Avatar">
+            <label for="name">Masterclass <br> Javascript </label>
+            </div>
+        
+            <hr size="0.5px" width="155%" color="lightgrey" style="position: absolute; top: 35%;width: 95%; margin: 10px; height: 0.5px; justify-content: center; margin-left: auto; margin-right: auto;"> 
+        
+            <div class="sug_vd2" id="demo2" style="position: absolute; top: 39%;">
+                <button onclick="myFunction2()">
+                    <i class="fa fa-times" aria-hidden="true" style="position: absolute;display: inline-block; right: 6px; top: 10%;"></i>
+                </button>
+                <img class="img4" src="../assets/comm_skil.jpeg" alt="Avatar">
+                <label for="name">Improve <br>Communication</label>
+        
+            </div>
+            <hr size="0.5px" width="155%" color="lightgrey" style="position: absolute; top: 55%;width: 95%; margin: 10px; height: 0.5px; justify-content: center; margin-left: auto; margin-right: auto;"> 
+        
+            <div class="sug_vd3" id="demo3" style="position: absolute; top: 59%;">
+                <button onclick="myFunction3()">
+                    <i class="fa fa-times" aria-hidden="true" style="position: absolute;display:inline-block; right: 6px; top: 10%;"></i>
+                </button>
+                <img class="img4" src="../assets/apti.jpeg" alt="Avatar">
+            <label for="name">Apptitude Solving. </label>
+            <!-- style="float: right; position: absolute;width: 90%; padding-left: 8px; padding-top: 15px;" -->
+            </div>
+            <hr size="0.5px" width="155%" color="lightgrey" style="position: absolute; top: 75%;width: 95%; margin: 10px; height: 0.5px; justify-content: center; margin-left: auto; margin-right: auto;"> 
+        
+            <div class="sug_vd4" id="demo4" style="position: absolute;top: 79%;">
+                <button onclick="myFunction4()">
+                    <i class="fa fa-times" aria-hidden="true" style="position: absolute;display:inline-block; right: 6px;top: 10%;"></i>
+                </button>
+                    <img class="img4" src="../assets/geo.jpeg" alt="Avatar">
+                <label for="name">Problem Solving </label>
+            </div>
+            <hr size="0.5px" width="155%" color="lightgrey" style="position: absolute; top: 95%;width: 95%; margin: 10px; height: 0.5px; justify-content: center; margin-left: auto; margin-right: auto;"> 
+        
+            </div>
+        </aside>
+
+
+
+
+        <div class="left_msg">
+            <section class="left_per">
+                <nav>
+                <ul>
+
+                <button type="button" style="width: 100%; border: none; background-color: #efeff1;">
+                <li>
+                <div class="row1">
+                    <div class="img_prof5">
+                        <img src="../assets/prof_pic.jpeg" alt="Avatar">
+                    </div>
+                </div>
+                <div class="row2">
+                    <p class="msg3">Ravenous Butterflies</p>
+                    <!-- <p class="msg2">hey whatsup are you there?</p> -->
+                </div>
+                </li>
+                </button>
+
+                <button type="button" style="width: 100%;border: none; background-color: #efeff1;">
+                <li>
+                <div class="row1">
+                    <div class="img_prof5">
+                        <img src="../assets/prof_pic.jpeg" alt="Avatar">
+                    </div>
+                </div>
+                <div class="row2">
+                    <p class="msg3">Blackhat Anime</p>
+                    <!-- <p class="msg2">Meet me today at 10am sharp.</p> -->
+                </div>
+                </li>
+                </button>
+
+                <button type="button" style="width: 100%;border: none; background-color: #efeff1;">
+                <li>
+                <div class="row1">
+                    <div class="img_prof5">
+                        <img src="../assets/prof_pic.jpeg" alt="Avatar">
+                    </div>
+                </div>
+                <div class="row2">
+                    <p class="msg3">Nostalgic Playlist</p>
+                    <!-- <p class="msg2">I am there for you always.</p> -->
+                </div>
+                </li>
+                </button>
+
+                <button type="button" style="width: 100%;border: none; background-color: #efeff1;">
+                <li>
+                <div class="row1">
+                    <div class="img_prof5">
+                        <img src="../assets/prof_pic.jpeg" alt="Avatar">
+                    </div>
+                </div>
+                <div class="row2">
+                    <p class="msg3">Music of Hearts</p>
+                    <!-- <p class="msg2">ping me up tummorow.</p> -->
+                </div>
+                </li>
+                </button>
+
+                <button type="button" style="width: 100%;border: none; background-color: #efeff1;">
+                <li>
+                <div class="row1">
+                    <div class="img_prof5">
+                        <img src="../assets/prof_pic.jpeg" alt="Avatar">
+                    </div>
+                </div>
+                <div class="row2">
+                    <p class="msg3">The Brief-.Case</p>
+                    <!-- <p class="msg2">Lets meetup someday.</p> -->
+                </div>
+                </li>
+                </button>
+                
+
+                <button type="button" style="width: 100%;border: none; background-color: #efeff1;">
+                <li>
+                <div class="row1">
+                    <div class="img_prof5">
+                        <img src="../assets/prof_pic.jpeg" alt="Avatar">
+                    </div>
+                </div>
+                <div class="row2">
+                    <p class="msg3">Java Professionals</p>
+                    <!-- <p class="msg2">Lets go for a movie this weekend.</p> -->
+                </div>
+                </li>
+                </button>
+
+                <button type="button" style="width: 100%;border: none; background-color: #efeff1;">
+                <li>
+                <div class="row1">
+                    <div class="img_prof5">
+                        <img src="../assets/prof_pic.jpeg" alt="Avatar">
+                    </div>
+                </div>
+                <div class="row2">
+                    <p class="msg3">Web Developers Community</p> 
+                    <!-- <p class="msg2">Do call me after 10pm tonight.</p> -->
+                </div>
+                </li>
+                </button>
+
+            </section>
+
+        </div>
+
+        
+ 
+        <script>
+            function myFunction1() {
+              var myobj = document.getElementById("demo1");
+              myobj.remove();
+            }
+        
+            function myFunction2() {
+              var myobj = document.getElementById("demo2");
+              myobj.remove();
+            }
+        
+            function myFunction3() {
+              var myobj = document.getElementById("demo3");
+              myobj.remove();
+            }
+        
+            function myFunction4() {
+              var myobj = document.getElementById("demo4");
+              myobj.remove();
+            }
+            </script>
+
+            <style>
+                .sug_vd2 button i:focus  {
+                    animation-name: slideout;
+                
+                }
+                @keyframes slideout{
+                    0% {
+                        transform:translateX(0);
+                            opacity: 1;
+                        }
+                    100% {
+                            transform:translateX(-5);
+                            opacity: 0;
+                        }
+                    
+
+                }
+            </style>
+    
+</body>
+</html>
