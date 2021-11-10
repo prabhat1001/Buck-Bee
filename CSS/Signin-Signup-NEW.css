@@ -12,7 +12,9 @@ body{
   align-items: center;
   justify-content: center;
   /* background: #e8e52a; */
-      background-image: url('./assets/img3.jpg');
+
+      background-image: url('../assets/img3.jpg');
+
       background-repeat: no-repeat;
       background-size: 100% 100%;
   padding: 30px;
@@ -49,7 +51,9 @@ body{
   width: 100%;
 }
 .cover .back{
-  transform: rotateY(180deg);
+
+  transform: rotateY(360deg);
+
   backface-visibility:hidden;
 }
 .container .cover::before,

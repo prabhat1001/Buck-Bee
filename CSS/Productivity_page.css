@@ -5,6 +5,7 @@ body{
     background-color: #ffe99f;
 }
 
+
 .header{
     width: 100%;
     
@@ -119,19 +120,22 @@ body{
     }  
 }
 
+
+/* ------------------------------------------------------------------ */
+
 .whole{
     display: flex;
     margin-top: 50px;
 }
 .profile{
     width: 44vh;
-    height: 48vh;
+    height: 50vh;
     border-top: 40px solid rgb(255, 207, 51);
     margin-left: 50px;
     box-shadow: 5px 5px 10px #4b4b4b60 ;
     background-color: white;
     border-radius: 10%;
-    margin-top: 40px;
+    margin-top: 80px;
     justify-content: center;
     text-align: center;
 }
@@ -145,6 +149,12 @@ body{
 .profile_content h3{
     margin: 10px;
     padding: 5px;  
+}
+
+.badges{
+    display: flex;
+    margin-top: -13px;
+    margin-left: 100px;
 }
 .firsticon i{
     color: gold;
@@ -160,7 +170,7 @@ body{
     margin: 20px 30px;
 } */
 .allcard{
-    margin-top: 40px;
+    margin-top: 80px;
     margin-left: 150px;
     /* background-color: white; */
 }
@@ -251,7 +261,27 @@ body{
     .allcard .lowercards{
         display: inline;
     }
+
+    .header_search i{
+        font-size: 20px;
+    }
+    .header_search input{
+        width: 50px;
+    }
+    .header{
+        width: 100%;
+        height: 40px;
+    }
+    .header img{
+        width: auto;
+        height: auto;
+    }
+    .header_search{
+        width: auto;
+        height: auto;
+    }
 }
+
 @media (max-width:375px){
     .profile{
         width:60%;
@@ -288,6 +318,7 @@ body{
         display: inline;
     }
 }
+
 @media (max-width:480px){
     .profile{
         width:60%;
@@ -305,8 +336,7 @@ body{
         font-size: 30px;
         margin: 10px 0;
     }
-    .card{
-    }
+   
     .allcard{
         width:60%;
         height:50vh;

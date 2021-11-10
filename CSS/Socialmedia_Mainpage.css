@@ -691,7 +691,7 @@ h5{
     cursor: pointer;
 }
 }
-@media (max-width:423px){
+@media (max-width:480px){
     .feed{
         width:50vh;
         margin-left: -20px;

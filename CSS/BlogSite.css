@@ -5,9 +5,11 @@
     font-family: Arial, Helvetica, sans-serif;
 
 }
+
 body{
     overflow-x: hidden;
 }
+
 
 #more {display: none;}
 
@@ -164,6 +166,7 @@ section.blog_content
     border-radius: 10px;
     box-shadow: 5px 5px 10px #808e9b;
 }
+
 .header{
     width: 100%;
     
@@ -277,6 +280,7 @@ section.blog_content
         background-color: gray;
     }  
 }
+
 .section.blog_content2 .video1{
 left: 100px;
 
@@ -2817,4 +2821,4 @@ form input[type="submit"]
         position: absolute;
         width: 95%;
     }
-}
+
