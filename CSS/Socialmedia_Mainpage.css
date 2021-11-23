@@ -336,6 +336,26 @@ h5{
     display: flex;
     margin-left: 20px;
 }
+.likeicons .like #likebtn1:hover{
+    color: red;
+}
+.likeicons .like #likebtn2:hover{
+    color: red;
+}
+.likeicons .like #likebtn3:hover{
+    color: red;
+}
+
+.likeicons #save1:hover{
+    color: rgb(0, 0, 0);
+}
+.likeicons #save2:hover{
+    color: rgb(0, 0, 0);
+}
+.likeicons #save3:hover{
+    color: rgb(0, 0, 0);
+}
+
 #click3{
     display: none;
 }
