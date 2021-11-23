@@ -85,6 +85,7 @@
         .covercontainer{
             display:inline-flex;
             background: fixed;
+            width: 100%;
         }
 
         .coverimg{
@@ -98,7 +99,7 @@
         }
     
         .coverimg img{
-            width:100%;
+            width:10%;
             height:auto;
             max-height: 230px;
             display: block;
