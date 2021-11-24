@@ -99,7 +99,7 @@
         }
     
         .coverimg img{
-            width:10%;
+            width:100%;
             height:auto;
             max-height: 230px;
             display: block;
